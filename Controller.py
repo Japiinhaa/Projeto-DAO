@@ -26,11 +26,9 @@ class ControllerAdicionarTarefa():
 class ControllerExcluirTarefa():
     def __init__(self, excluir):
         self.excluir = excluir
-
         try:
             if TODO.RemoverTarefa(self.excluir) == True and self.excluir >= "0":
                 print("Tarefa removida.")
-                    
             else:
                 print("Algum problema foi encontrado.")
 
