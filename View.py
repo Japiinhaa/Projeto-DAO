@@ -15,6 +15,7 @@ while sair == 0:
             adicionarTarefa = ControllerAdicionarTarefa(tarefa)
             os.system("pause")
 
+    
         case "2":
             os.system("cls")
             listarTarefa = ControllerListarTarefa()
@@ -23,9 +24,8 @@ while sair == 0:
         case "3":
             os.system("cls")
             listarTarefa = ControllerListarTarefa()
-            excluir = (input("Digite o número da tarefa que deseja excluir > "))
+            excluir = input("Digite o número da tarefa que deseja excluir > ")
             excluirTarefa = ControllerExcluirTarefa(excluir)
-            listarTarefa = ControllerListarTarefa()
             os.system("pause")
 
         case "4":
