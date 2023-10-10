@@ -12,7 +12,7 @@ class DaoExcluirTarefa():
             with open("tarefas.txt", "w") as arquivo:
                 arquivo.writelines(linhas)
                 print("Tarefa removida do DAO.")
-        
+
 class DaoListarTarefa():
     def __init__(self):
         with open("tarefas.txt", "r") as arquivo:
