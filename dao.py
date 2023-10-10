@@ -2,7 +2,7 @@ class DaoAdicionarTarefa():
     def __init__(self, tarefa):
         with open("tarefas.txt", "w") as arquivo:
             arquivo.write(tarefa + "\n")
-            print("Tarefa adicionada.")
+            print("Tarefa adicionada ao DAO.")
 
 class DaoExcluirTarefa():
     def __init__(self, excluir):
@@ -11,7 +11,7 @@ class DaoExcluirTarefa():
             linhas.pop(int(excluir) - 1)
             with open("tarefas.txt", "w") as arquivo:
                 arquivo.writelines(linhas)
-                print("Tarefa removida.")
+                print("Tarefa removida do DAO.")
         
 class DaoListarTarefa():
     def __init__(self):

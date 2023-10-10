@@ -21,13 +21,11 @@ while sair == 0:
         case "2":
             os.system("cls")
             listarTarefa = ControllerListarTarefa()
-            listarTarefa = DaoListarTarefa()
             os.system("pause")
 
         case "3":
             os.system("cls")
             listarTarefa = ControllerListarTarefa()
-            listarTarefa = DaoListarTarefa()
             excluir = input("Digite o número da tarefa que deseja excluir > ")
             excluirTarefa = ControllerExcluirTarefa(excluir)
             excluirTarefa = DaoExcluirTarefa(excluir)
