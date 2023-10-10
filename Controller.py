@@ -25,21 +25,32 @@ class ControllerAdicionarTarefa():
 
 class ControllerExcluirTarefa():
     def __init__(self, excluir):
-        self.excluir = excluir - 1
+        self.excluir = excluir
 
-        try:
-            if TODO.RemoverTarefa(self.excluir) == True:
-                print("Tarefa removida.")
-   
-            else:
-                print("Algum problema foi encontrado.")                
+        while True:
+            try:
+                try:
+                    excluir_convertido = int(excluir)
+                    excluir_convertido -= 1
+            
+                except Exception as erro:
+
+                    print("Digite um número válido. Esta tarefa não existe.")
+                    os.system("pause")
+                    os.system("cls")
+
+                if TODO.RemoverTarefa(self.excluir) == True:
+                    print("Tarefa removida.")
+                    break
+                else:
+                    print("Algum problema foi encontrado.")                
+                    os.system("pause")
+                    os.system("cls")
+
+            except Exception as erro:
+                print("Erro ao remover a tarefa: {erro}")
+                os.system("pause")
                 os.system("cls")
-
-        except Exception as erro:
-            print("Erro ao remover a tarefa: {erro}")
-        except Exception as erro:
-                print("Digite um número válido. Esta tarefa não existe.")
-
 
 class ControllerListarTarefa():
     def __init__(self):
