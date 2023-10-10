@@ -20,7 +20,10 @@ while sair == 0:
     
         case "2":
             os.system("cls")
+            print("Estes são os itens presentes na lista de tarefas: ")
             listarTarefa = ControllerListarTarefa()
+            print("Estes são os itens presentes no DAO: ")
+            listarTarefa = DaoListarTarefa()
             os.system("pause")
 
         case "3":

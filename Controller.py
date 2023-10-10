@@ -28,9 +28,7 @@ class ControllerExcluirTarefa():
         self.excluir = excluir
 
         try:
-            if TODO.RemoverTarefa(self.excluir) == True:
-                excluir_convert = int(self.excluir)
-                excluir_convert -= 1
+            if TODO.RemoverTarefa(self.excluir) == True and self.excluir >= "0":
                 print("Tarefa removida.")
                     
             else:
