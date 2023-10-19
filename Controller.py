@@ -5,7 +5,6 @@ import random
 with open ("tarefas.txt", "w") as arquivo:
     arquivo.write("ID - Tarefa\n")
 
-    
 class ControllerAdicionarTarefa():
     def __init__(self, tarefa):
 
