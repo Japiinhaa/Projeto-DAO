@@ -20,7 +20,7 @@ class DaoListarTarefa():
     def __init__(self):
         with open("tarefas.txt", "r") as arquivo:
             linhas = arquivo.readlines()
-            cont = 0
+            cont = -1
             for tarefas in linhas:
                 cont += 1
                 print(f"{cont}. {tarefas}")
