@@ -1,6 +1,7 @@
 class DaoAdicionarTarefa():
     def __init__(self, tarefa, idtarefa):
         with open("tarefas.txt", "a") as arquivo:
+            arquivo.write("ID único - Tarefa\n")
             arquivo.write(idtarefa)
             arquivo.write(' - ')
             arquivo.write(tarefa)
