@@ -5,7 +5,7 @@ import random
 
 sair = 0
 while sair == 0:
-    
+
     os.system("cls")
     print("SOFTWARE DE TO-DO \n1 - Adicionar tarefa \n2 - Listar tarefas \n3 - Remover tarefa \n4 - Sair")
     opcao = input("Digite a opção desejada > ")
@@ -17,7 +17,6 @@ while sair == 0:
             adicionarTarefa = ControllerAdicionarTarefa(tarefa)
             adicionarTarefa = DaoAdicionarTarefa(tarefa, idtarefa = str(random.randint(0, 100)))
             os.system("pause")
-
     
         case "2":
             os.system("cls")
