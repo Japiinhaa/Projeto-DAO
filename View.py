@@ -1,6 +1,7 @@
 from Controller import *
 from dao import *
 import os
+import random
 
 sair = 0
 while sair == 0:
@@ -14,7 +15,7 @@ while sair == 0:
             os.system("cls")
             tarefa = input("Digite a tarefa > ")
             adicionarTarefa = ControllerAdicionarTarefa(tarefa)
-            adicionarTarefa = DaoAdicionarTarefa(tarefa)
+            adicionarTarefa = DaoAdicionarTarefa(tarefa, idtarefa = str(random.randint(0, 100)))
             os.system("pause")
 
     

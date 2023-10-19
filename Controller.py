@@ -1,9 +1,8 @@
 from Model import *
 import os
-import random
 
 class ControllerAdicionarTarefa():
-    def __init__(self, tarefa, idtarefa):
+    def __init__(self, tarefa):
 
         try:
             if tarefa == "":
@@ -13,7 +12,6 @@ class ControllerAdicionarTarefa():
 
                 try:
                     self.tarefa = tarefa
-                    self.idtarefa = random.randint (1,99)
                     if TODO.AdicionarTarefa(self.tarefa) == True:
                         print("Tarefa adicionada.")
                     else:
