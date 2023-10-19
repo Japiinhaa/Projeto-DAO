@@ -1,7 +1,6 @@
 from Model import *
 import os
-with open("tarefas.txt", "a") as arquivo:
-    arquivo.write("Id - Tarefa\n")
+import random
 class ControllerAdicionarTarefa():
     def __init__(self, tarefa):
 
