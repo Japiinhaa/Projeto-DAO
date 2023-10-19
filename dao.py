@@ -1,7 +1,9 @@
 class DaoAdicionarTarefa():
-    def __init__(self, tarefa):
-        with open("tarefas.txt", "w") as arquivo:
-            arquivo.write(tarefa + "\n")
+    def __init__(self, tarefa, idtarefa):
+        with open("tarefas.txt", "a") as arquivo:
+            arquivo.write(idtarefa)
+            arquivo.write(tarefa)
+            arquivo.write("\n")
             print("Tarefa adicionada ao DAO.")
 
 class DaoExcluirTarefa():
