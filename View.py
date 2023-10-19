@@ -5,7 +5,7 @@ import random
 
 sair = 0
 while sair == 0:
-
+    
     os.system("cls")
     print("SOFTWARE DE TO-DO \n1 - Adicionar tarefa \n2 - Listar tarefas \n3 - Remover tarefa \n4 - Sair")
     opcao = input("Digite a opção desejada > ")
