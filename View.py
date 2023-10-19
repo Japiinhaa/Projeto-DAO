@@ -2,7 +2,6 @@ from Controller import *
 from dao import *
 import os
 import random
-
 sair = 0
 while sair == 0:
 
