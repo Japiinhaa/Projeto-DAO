@@ -16,7 +16,7 @@ while sair == 0:
             adicionarTarefa = ControllerAdicionarTarefa(tarefa)
             adicionarTarefa = DaoAdicionarTarefa(tarefa, idtarefa = str(random.randint(0, 100)))
             os.system("pause")
-    
+
         case "2":
             os.system("cls")
             print("Estes são os itens presentes na lista de tarefas: ")
